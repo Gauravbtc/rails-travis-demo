@@ -1,0 +1,31 @@
+default: &default
+  adapter: postgresql
+  encoding: UTF8
+  pool: 500
+  username: root
+  password: root
+  pool: 5
+
+development:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: 'rails-tarvis-development'
+  
+staging:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: 'rails-tarvis-staging'
+
+test:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: 'rails-tarvis-test'
+production:
+  <<: *default
+  host: localhost
+  port: 5432
+  database: 'rails-tarvis-production'
+ 
