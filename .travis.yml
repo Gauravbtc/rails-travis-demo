@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.6.2
 script:
-  — bundle exec rails db:migrate
+  — bundle exec rails db:setup
 cache: bundler
 services:
   - postgresql
@@ -10,6 +10,3 @@ addons:
   postgresql: "11" 
 after_success:
   - bundle exec codeclimate-test-reporter
-before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database rails_travis_ci_test;' -U postgres
