@@ -1,25 +1,27 @@
-# README
+# Travis Rails Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application contain basic CRUD operation in rails with Rspec and travis CI 
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+STEP 1 : clone this project
+```
+git clone https://github.com/Gauravbtc/rails-travis-demo.git
 
-* System dependencies
+STEP 2 : Bundle Installation
+```
+bundle install
 
-* Configuration
+STEP 3 : Create Database and Migration 
+  change databse.yml as per your system configrations and run below commnds
+```
+rails db:create
+rails db:migrate    
 
-* Database creation
+STEP 4 : Run Rails Server
+```
+rails s
 
-* Database initialization
+STEP 5 : Run Rails Server
+ * http://localhost:3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# rails-tarvis-demo
